@@ -20,9 +20,9 @@ SOFT_ID = '915502'
 CAPTCHA_KIND = '9101'
 FILE_NAME = 'captcha3.png'
 image = cv2.imread(FILE_NAME)
-image = cv2_add_text(image, '请点击目标滑块左上角', int(image.shape[1] / 10), int(image.shape[0] / 2), (255, 0, 0), 40)
+image = cv2_add_text(image, '请点击目标滑块左上角', int(
+    image.shape[1] / 10), int(image.shape[0] / 2), (255, 0, 0), 40)
 client = Chaojiying(USERNAME, PASSWORD, SOFT_ID)
-result = client.post_pic(io.BytesIO(cv2.imencode('.png', image)[1]).getvalue(), CAPTCHA_KIND)
+result = client.post_pic(io.BytesIO(cv2.imencode(
+    '.png', image)[1]).getvalue(), CAPTCHA_KIND)
 print(result)
-
-
