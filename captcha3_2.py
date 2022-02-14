@@ -15,7 +15,7 @@ def cv2_add_text(image, text, left, top, textColor=(255, 0, 0), text_size=20):
 
 
 USERNAME = 'Germey'
-PASSWORD = '940629cqc'
+PASSWORD = ''
 SOFT_ID = '915502'
 CAPTCHA_KIND = '9101'
 FILE_NAME = 'captcha3.png'
